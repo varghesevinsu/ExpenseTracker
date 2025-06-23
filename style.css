@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+input,
+select,
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #ff6b81;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn{
+  padding: 12px 8px;
+}
+
+#expense-grid {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#balance {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-control,
+.form-select {
+  padding: 12px 8px;
+}
+
+.add-category {
+  color: #333;
+  background: #ccc;
+}
+
+.btn-white{
+  color: #fff;
+  border-color: #fff;
+  width: auto;
+  padding: 5px;
+}
+.expense-row, .income-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

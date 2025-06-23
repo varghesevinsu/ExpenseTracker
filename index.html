@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#673ab7" />
+  <title>Expense Tracker PWA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="mb-3">
+      <div id="balance">€0.00</div>
+    </div>
+    <div class="mb-3">
+      <label for="income-input" class="form-label">Add Income</label>
+      <input type="number" id="income-input" class="form-control" />
+      <button class="btn btn-success mt-2" onclick="addIncome()">Add Income</button>
+    </div>
+    <div class="mb-3">
+      <label for="expense-input" class="form-label">Add Expense</label>
+      <input type="number" id="expense-input" class="form-control" />
+      <div class="d-flex align-items-center mt-2">
+        <select id="category-select" class="form-select me-2"></select>
+        <button class="btn btn-outline-secondary add-category" onclick="addCategory()">+ Add Category</button>
+      </div>
+      <button class="btn btn-danger mt-2" onclick="addExpense()">Add Expense</button>
+    </div>
+    
+    <!-- New income section -->
+    <div class="mt-4" id="income-grid"></div>
+
+    <div class="mt-4" id="expense-grid"></div>
+  </div>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>
